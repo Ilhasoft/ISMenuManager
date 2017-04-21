@@ -1,15 +1,17 @@
 # ISMenuManager
 
-####Requirements:
+![Menu](http://i.imgur.com/uf9EYsu.png)
+
+### Requirements:
 
 iOS 9 +
 Swift 3
 
-####Install with Cocoapods:
+### Install with Cocoapods:
 
  pod 'ISMenuManager', :git => 'https://github.com/Ilhasoft/ISMenuManager', :branch => 'master'
 
- ####How does it work?
+ ### How does it work?
 
 1. Create some UIViewController, for example MyMenuController, and subclass ISMenuController with xib option checked.
 2. Copy the following code:
@@ -45,20 +47,20 @@ class MyMenuController: ISMenuController {
 5. Your custom cell must subclass ISMenuCell. 
 
 
-####Adding more MenuItems
+### Adding more MenuItems
 
 ```swift
 menuController.addMenuItem(menuItem: ISMenuItem(icon: UIImage(named:"Home"), title: "Home \(index)", controller: nil))
 ```
 
-####Delegate setup
+### Delegate setup
 
 ```swift
 menuController.delegate = self
 ```
 
 
-####Be alerted when menu item did tap
+### Be alerted when menu item did tap
 
 ```swift
 func menuItemDidTap(menuController: ISMenuController, menuItem: ISMenuItem, index: Int) {

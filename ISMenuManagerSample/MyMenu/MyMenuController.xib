@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISMenuController" customModule="ISMenuManager">
+            <connections>
+                <outlet property="bottomView" destination="Ps6-ri-4n2" id="s1Z-1D-eDK"/>
+                <outlet property="bottomViewHeight" destination="nzS-nS-bzK" id="UUW-X3-trd"/>
+                <outlet property="tableView" destination="gDo-kX-EV9" id="Bm0-w6-jNA"/>
+                <outlet property="topView" destination="dfI-iJ-PSk" id="Tpg-fg-Cgw"/>
+                <outlet property="topViewHeight" destination="bnk-ao-x7x" id="oH3-28-oeH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gDo-kX-EV9">
+                    <rect key="frame" x="0.0" y="140" width="375" height="527"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfI-iJ-PSk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                    <color key="backgroundColor" red="0.62745098040000002" green="0.1176470588" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="bnk-ao-x7x"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ps6-ri-4n2">
+                    <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="nzS-nS-bzK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ps6-ri-4n2" secondAttribute="bottom" id="1QI-Nb-L6u"/>
+                <constraint firstItem="Ps6-ri-4n2" firstAttribute="top" secondItem="gDo-kX-EV9" secondAttribute="bottom" id="2V7-5D-Qq2"/>
+                <constraint firstItem="dfI-iJ-PSk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Emc-7x-H8V"/>
+                <constraint firstItem="gDo-kX-EV9" firstAttribute="top" secondItem="dfI-iJ-PSk" secondAttribute="bottom" id="KM9-Kj-xHX"/>
+                <constraint firstAttribute="trailing" secondItem="Ps6-ri-4n2" secondAttribute="trailing" id="OFA-nD-vK0"/>
+                <constraint firstItem="dfI-iJ-PSk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Uhn-id-9eY"/>
+                <constraint firstAttribute="trailing" secondItem="dfI-iJ-PSk" secondAttribute="trailing" id="Xnw-d1-Pcf"/>
+                <constraint firstItem="Ps6-ri-4n2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kKL-Ut-Wdu"/>
+                <constraint firstItem="gDo-kX-EV9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vXx-RP-nIA"/>
+                <constraint firstAttribute="trailing" secondItem="gDo-kX-EV9" secondAttribute="trailing" id="vlf-Bp-iGm"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

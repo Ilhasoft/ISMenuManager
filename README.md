@@ -1,7 +1,5 @@
 # ISMenuManager
 
-![Menu](http://i.imgur.com/uf9EYsu.png)
-
 ####Requirements:
 
 iOS 9 +

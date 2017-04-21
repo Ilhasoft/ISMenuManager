@@ -1,6 +1,7 @@
 # ISMenuManager
 
-<img src="http://i.imgur.com/uf9EYsu.png" width="262" height="466" />
+<img src="http://i.imgur.com/uf9EYsu.png" width="262" height="466"/>
+
 ####Requirements:
 
 iOS 9 +
